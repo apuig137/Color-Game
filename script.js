@@ -32,7 +32,7 @@ for(let i = 0; i < squares.length; i++) {
             changeColors(clickedColor);
             h1.style.color = clickedColor;
         } else {
-            this.style.background = "darkgreen";
+            this.style.background = "#554c40";
             message.textContent = "Intentalo Nuevamente";
         }
     })
@@ -58,6 +58,7 @@ reset.addEventListener("click", function(){
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
     this.textContent = "New Color";
+    h1.style.color = "#fff"
     message.textContent = "";
     for (let i = 0; i < squares.length; i++) {
         squares[i].style.background = colors[i];
